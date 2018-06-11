@@ -10,7 +10,7 @@ def to_array(text):
     """Convert string to ascii array.
     
     Args:
-        text: An string containing only uppercase and lowercase letters.
+        text: A string containing only uppercase and lowercase letters.
     Returns:
         A list of integers mapped to the corresponding ascii value. 
     
@@ -24,7 +24,7 @@ def to_text(array):
     Args:
         array: A list of integers mapped to the corresponding ascii value. 
     Returns:
-        An string containing the corresponding lowercase letters from the ascii table. 
+        A string containing the corresponding lowercase letters from the ascii table. 
     
     """
     return "".join([chr(int(x) + 96) for x in array])
